@@ -26,4 +26,40 @@
 .fonctionnement{
     display: flex;
     flex-direction: column;
+
+    ul{
+        counter-reset: comptelist;
+    }
+}
+.icn{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.btn-grey{
+    border-radius: 50px;
+    color: black;
+    box-shadow: 0 0 5px #b3b3b3;
+    width: 100%;
+    font-size: 16px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f6F6F6;
+
+    &::before{
+        counter-increment: comptelist 1;
+        content: counter(comptelist) "";
+        border-radius: 100%;
+        background: #9356dc;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        transform: translate(-8px, 0px);
+    }
 }
