@@ -15,7 +15,6 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow: hidden;
 }
 
 ul {
@@ -24,7 +23,7 @@ ul {
   padding-inline-start: 0px;
 }
 
-.fonctionnement {
+.fonctionnement, .restaurant {
   text-align: left;
   padding: 0 5% 0 5%;
 }
@@ -94,6 +93,28 @@ ul {
   color: white;
   align-items: center;
   transform: translate(-8px, 0px);
+}
+
+.restaurant {
+  display: flex;
+  background-color: #fafafa;
+  flex-direction: column;
+}
+.restaurant .img-card {
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
+}
+.restaurant .card-menu {
+  height: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+.restaurant .legende-card h3 {
+  color: black;
+  z-index: 1000;
 }
 
 * {
