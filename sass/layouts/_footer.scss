@@ -1,0 +1,35 @@
+footer{
+    background-color:#353535;
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5% 0 5%;
+        .footer-logo{
+            color: white;
+            font-family: "Shrikhand","cursive";
+            margin: 0;
+            text-align: left;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .footer-nav{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+                color: white;
+                margin-bottom: 10px;
+                .icn-footer{
+                    margin-right: 10px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+
+}
+
+
